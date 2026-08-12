@@ -27,6 +27,10 @@ timeout_ms = 15000
 repo_url = "https://worrydream.com/ExplorableExplanations/"
 repo_ref = "sha256:7c434b30d70366ea20ae34709c786844b4575203681bcbf4511f5c4b1e3eb25e"
 
+[mobile.prd]
+file = "PRD.md"
+walkthrough_video = "https://pxl.cl/cgn3m"
+
 [mobile.android]
 package = "com.bharatisethiya.explorableexplanations"
 min_sdk = 23

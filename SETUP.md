@@ -52,5 +52,7 @@ Unit tests `6` pass and APK assembles via `verify.sh`.
 
 ## Narration / Walkthrough Videos
 
-Human recording required after final runtime parity verification. Add the `pxl.cl` URL here before submission.
+- Walkthrough: https://pxl.cl/cgn3m — Screen Recording 2026-08-12: demonstrates Read thesis with conclusion/postscript, Scenario reactive document with live budget/attendance recomputation (tax 18→50, Vehicles vs Taxpayers, free admission, rise/fall), Filter dual explorable examples with log sliders 20-20000Hz Q 0.05-10, log-scaled frequency response (1024-sample FFT RFFT), pole plots gray arena #e4e4e4, impulse/step time plots, Context passage tap-word query with bundled offline facts + Wikipedia live lookup and honest empty state. Native bottom navigation portrait/landscape, no WebView.
+
+Internal source: https://www.internalfb.com/intern/px/p/cgn3m — public short link above is the pxl.cl version used for validation (like Catima's pxl.cl/c5VTM and pxl.cl/bQ54d).
 
