@@ -1,0 +1,43 @@
+[mobile]
+name = "Explorable Explanations"
+description = "A native active-reading lab for manipulating assumptions, exploring a digital filter, and checking claims in context."
+platform = "android"
+
+[mobile.tech]
+runtime = "native-android"
+
+[mobile.substrate]
+type = "docker-compose"
+
+[mobile.device]
+provider = "android-emulator"
+mode = "local-host"
+
+[mobile.commands]
+verify = "./verify.sh"
+start = "./start.sh"
+stop = "./stop.sh"
+smoke = "./scripts/android/smoke.sh"
+
+[mobile.smoke]
+description = "Open the native Scenario destination and assert that the live park-model outcome renders."
+timeout_ms = 15000
+
+[mobile.target]
+repo_url = "https://worrydream.com/ExplorableExplanations/"
+repo_ref = "sha256:7c434b30d70366ea20ae34709c786844b4575203681bcbf4511f5c4b1e3eb25e"
+
+[mobile.android]
+package = "com.bharatisethiya.explorableexplanations"
+min_sdk = 23
+target_sdk = 35
+
+[[screenshots]]
+screen = "read"
+file = "screenshots/read-portrait.png"
+device = "android"
+
+[[screenshots]]
+screen = "scenario"
+file = "screenshots/scenario-landscape.png"
+device = "android"

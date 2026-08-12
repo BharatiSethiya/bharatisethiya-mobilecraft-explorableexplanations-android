@@ -1,0 +1,35 @@
+{
+  "app": "bharatisethiya-mobilecraft-explorableexplanations-android",
+  "rubrics": [
+    {
+      "id": 1,
+      "criterion": "Changing the park charge, participation, taxpayer basis, admission, or eligibility immediately recalculates budget and attendance outcomes",
+      "type": "CUJ",
+      "priority": "must-have"
+    },
+    {
+      "id": 2,
+      "criterion": "Changing cutoff frequency or resonance updates coefficients, pole values, stability, and the native impulse-response plot from the same filter model",
+      "type": "CUJ",
+      "priority": "must-have"
+    },
+    {
+      "id": 3,
+      "criterion": "Context search returns truthful bundled facts for supported terms and an honest empty state for unsupported terms without leaving the app",
+      "type": "CUJ",
+      "priority": "must-have"
+    },
+    {
+      "id": 4,
+      "criterion": "Read, Scenario, Filter, and Context remain reachable through persistent native bottom navigation in portrait and landscape",
+      "type": "design",
+      "priority": "must-have"
+    },
+    {
+      "id": 5,
+      "criterion": "The app uses native Compose cards, controls, navigation, typography, accessibility semantics, and Canvas rendering without a WebView or browser chrome",
+      "type": "design",
+      "priority": "must-have"
+    }
+  ]
+}
