@@ -39,5 +39,25 @@ device = "android"
 
 [[screenshots]]
 screen = "scenario"
+file = "screenshots/scenario-portrait.png"
+device = "android"
+
+[[screenshots]]
+screen = "scenario"
 file = "screenshots/scenario-landscape.png"
+device = "android"
+
+[[screenshots]]
+screen = "filter"
+file = "screenshots/filter-portrait.png"
+device = "android"
+
+[[screenshots]]
+screen = "filter"
+file = "screenshots/filter-landscape.png"
+device = "android"
+
+[[screenshots]]
+screen = "context"
+file = "screenshots/context-portrait.png"
 device = "android"
