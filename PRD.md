@@ -1,12 +1,11 @@
 # Explorable Explanations Android — Product Requirements Document
 
-**Source:** https://worrydream.com/ExplorableExplanations/
-**HTML digest:** `7c434b30d70366ea20ae34709c786844b4575203681bcbf4511f5c4b1e3eb25e`
-**Script digests:** main.js `a726fc9f...`, park.js `79e9f4...`, filter.js `e5b2b3...`, wikipedia.js `8af4ce1...` (MIT, Bret Victor)
+**Source Concept:** Active-reading lab inspired by Bret Victor's explorable explanations essay (2011) — text as environment to think in. This PRD describes the Android product from scratch.
+**Content hash reference tracked in SOURCE.md separately**
 
 ## 1. Product Identity & Overview
 
-Explorable Explanations Android is a native active-reading lab that translates Bret Victor's 2011 essay into a touch-first mobile experience. The original essay argues that text should be an *environment to think in*, not just information to be consumed. It presents three ideas: Reactive Documents (manipulate assumptions), Explorable Examples (make abstract concrete with multiple linked representations), and Contextual Information (just-in-time fact checking without losing place).
+Explorable Explanations Android is a native active-reading lab that turns static text into an environment to think in. The essay that inspired it argues that text should be an environment to think in, not just information to be consumed. It presents three ideas: Reactive Documents (manipulate assumptions), Explorable Examples (make abstract concrete with multiple linked representations), and Contextual Information (just-in-time fact checking without losing place).
 
 The Android app preserves **semantic outcomes**, not desktop gestures. Long-form anchors and hover+W become bottom navigation + tap-to-query. Draggable inline numbers become Material sliders/chips/switches. HTML5 canvases become Compose Canvas with log-scaled frequency rendering. Wikipedia hover boxes become an in-app panel with bundled offline facts plus live lookup and honest empty states.
 
