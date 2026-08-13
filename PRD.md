@@ -21,7 +21,7 @@ The app presents a single long-form argument about active reading, split into an
 * Let readers see immediate consequences of assumption changes.
 * Make abstract filter concepts concrete through multiple linked representations.
 * Make fact checking almost effortless and preserve reading place.
-* Pass MobileCraft observable rubrics for reactive calculations, explorable examples, truthful contextual facts, persistent navigation portrait and landscape, and native controls without browser chrome.
+* Deliver reactive calculations, explorable examples, truthful contextual facts, persistent navigation in portrait and landscape, and native controls without browser chrome.
 
 ## 4. Personas
 
@@ -110,6 +110,3 @@ The app presents a single long-form argument about active reading, split into an
 * Scenario budget and attendance outcomes react instantly to all five controls with correct rise or fall wording.
 * Filter shows two independent examples, log-scaled controls twenty to twenty thousand hertz and zero point zero five to ten, stability badge, log frequency response, pole plot gray arena with colored crosses, impulse and step traces.
 * Context passage contains NREL clause, tap populates query, bundled facts truthful, empty state honest, no navigation away.
-* Screenshots evidence exists for read, scenario portrait and landscape, filter portrait and landscape, context portrait.
-* Walkthrough video link is a public short link.
-* This document does not contain the original repository URL and describes the product from scratch in product voice.
