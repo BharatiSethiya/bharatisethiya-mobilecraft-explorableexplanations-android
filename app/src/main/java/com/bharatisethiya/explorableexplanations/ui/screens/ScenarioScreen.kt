@@ -1,6 +1,7 @@
 package com.bharatisethiya.explorableexplanations.ui.screens
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
@@ -23,6 +24,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.bharatisethiya.explorableexplanations.model.ParkInputs
@@ -52,7 +54,9 @@ fun ScenarioScreen(innerPadding: PaddingValues) {
         item {
             ExplanationCard("Annual charge", "Explore values from $0 to $50.") {
                 Text("$${tax.toInt()}", style = MaterialTheme.typography.headlineMedium)
-                Slider(tax, { tax = it }, valueRange = 0f..50f, modifier = Modifier.semantics { contentDescription = "Annual charge ${tax.toInt()} dollars" })
+                AccessibleSlider("Annual charge", "${tax.toInt()} dollars") {
+                    Slider(tax, { tax = it }, valueRange = 0f..50f)
+                }
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     FilterChip(taxPerVehicle, { taxPerVehicle = true }, { Text("Vehicles") })
                     FilterChip(!taxPerVehicle, { taxPerVehicle = false }, { Text("Taxpayers") })
@@ -62,16 +66,27 @@ fun ScenarioScreen(innerPadding: PaddingValues) {
         item {
             ExplanationCard("Participation", "Percentage expected to pay the annual charge.") {
                 Text("${compliance.toInt()}%", style = MaterialTheme.typography.headlineMedium)
-                Slider(compliance, { compliance = it }, valueRange = 0f..100f, steps = 19)
+                AccessibleSlider("Participation", "${compliance.toInt()} percent") {
+                    Slider(compliance, { compliance = it }, valueRange = 0f..100f, steps = 19)
+                }
             }
         }
         item {
             ExplanationCard("Park admission", "Set the new per-vehicle price.") {
                 Text(if (admission == 0f) "Free" else "$${admission.toInt()}", style = MaterialTheme.typography.headlineMedium)
-                Slider(admission, { admission = it }, valueRange = 0f..25f, steps = 24)
+                AccessibleSlider("Park admission", if (admission == 0f) "Free" else "${admission.toInt()} dollars") {
+                    Slider(admission, { admission = it }, valueRange = 0f..25f, steps = 24)
+                }
                 Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceBetween) {
                     Text("Applies to everyone")
-                    Switch(admissionForEveryone, { admissionForEveryone = it })
+                    Switch(
+                        checked = admissionForEveryone,
+                        onCheckedChange = { admissionForEveryone = it },
+                        modifier = Modifier.semantics {
+                            contentDescription = "Admission applies to everyone"
+                            stateDescription = if (admissionForEveryone) "Everyone" else "Only visitors who paid the annual charge"
+                        },
+                    )
                 }
             }
         }
@@ -121,3 +136,11 @@ fun ScenarioScreen(innerPadding: PaddingValues) {
 }
 
 private fun format(value: Float): String = String.format(Locale.US, "%.1f", value)
+
+@Composable
+private fun AccessibleSlider(label: String, value: String, content: @Composable () -> Unit) {
+    Box(Modifier.fillMaxWidth().semantics(mergeDescendants = true) {
+        contentDescription = label
+        stateDescription = value
+    }) { content() }
+}

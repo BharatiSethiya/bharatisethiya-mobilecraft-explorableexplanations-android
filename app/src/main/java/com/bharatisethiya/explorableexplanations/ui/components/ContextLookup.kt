@@ -17,6 +17,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.bharatisethiya.explorableexplanations.model.ContextRepository
 import com.bharatisethiya.explorableexplanations.model.WikipediaRepository
@@ -60,7 +61,12 @@ fun ContextLookupPanel(query: String, onQueryChange: (String) -> Unit, modifier:
                 loading -> Text("Looking up Wikipedia…")
                 title != null && summary != null -> {
                     Text(title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
-                    Text(summary, style = MaterialTheme.typography.bodyMedium)
+                    Text(
+                        summary,
+                        style = MaterialTheme.typography.bodyMedium,
+                        maxLines = 8,
+                        overflow = TextOverflow.Ellipsis,
+                    )
                     Text(
                         if (wikiResult != null) "Wikipedia" else "Bundled offline context",
                         style = MaterialTheme.typography.labelMedium,

@@ -2,12 +2,14 @@ package com.bharatisethiya.explorableexplanations.ui.screens
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.text.ClickableText
+import androidx.compose.foundation.clickable
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
@@ -18,12 +20,14 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.buildAnnotatedString
+import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.role
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.bharatisethiya.explorableexplanations.ui.components.ContextLookupPanel
 import com.bharatisethiya.explorableexplanations.ui.components.ExplanationCard
-import com.bharatisethiya.explorableexplanations.ui.components.wordAt
 
 @Composable
 fun ContextScreen(innerPadding: PaddingValues) {
@@ -92,10 +96,8 @@ private fun AdvocacyPassage(
     onQueryChange: (String) -> Unit,
     onTermSelected: (String) -> Unit,
 ) {
-    val passage = buildAnnotatedString {
-        append("California leads the nation in installed wind generation capacity. Over a third of the wind power in the United States is generated in California. In 2004, wind energy in California produced 4,258 million kilowatt-hours of electricity, about 1.5 percent of the state’s total electricity. That's more than enough to light a city the size of San Francisco.\n\n")
-        append("More than 13,000 of California’s wind turbines, or 95 percent of all of California’s wind generating capacity and output, are located in three primary regions: Altamont Pass (east of San Francisco - a portion of which is shown on the right in this photo from NREL), Tehachapi (south east of Bakersfield) and San Gorgonio (near Palm Springs, east of Los Angeles).")
-    }
+    val passage = "California leads the nation in installed wind generation capacity. Over a third of the wind power in the United States is generated in California. In 2004, wind energy in California produced 4,258 million kilowatt-hours of electricity, about 1.5 percent of the state’s total electricity. That's more than enough to light a city the size of San Francisco.\n\n" +
+        "More than 13,000 of California’s wind turbines, or 95 percent of all of California’s wind generating capacity and output, are located in three primary regions: Altamont Pass (east of San Francisco - a portion of which is shown on the right in this photo from NREL), Tehachapi (south east of Bakersfield) and San Gorgonio (near Palm Springs, east of Los Angeles)."
 
     Card(
         modifier = Modifier.fillMaxWidth(),
@@ -104,17 +106,43 @@ private fun AdvocacyPassage(
     ) {
         Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(14.dp)) {
             Text("Renewable Energy in California", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
+            AccessiblePassage(passage, onTermSelected)
             if (query.isNotBlank()) {
                 ContextLookupPanel(query, onQueryChange)
             }
-            @Suppress("DEPRECATION")
-            ClickableText(
-                text = passage,
-                style = MaterialTheme.typography.bodyLarge.copy(color = MaterialTheme.colorScheme.onSurface),
-                onClick = { offset ->
-                    wordAt(passage.text, offset)?.let(onTermSelected)
-                },
-            )
+        }
+    }
+}
+
+internal fun passageWords(text: String): List<String> =
+    Regex("[\\p{L}\\p{N}]+(?:[’'][\\p{L}\\p{N}]+)?")
+        .findAll(text)
+        .map { it.value }
+        .distinctBy { it.lowercase() }
+        .toList()
+
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+private fun AccessiblePassage(text: String, onTermSelected: (String) -> Unit) {
+    Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+        text.split("\n\n").forEach { paragraph ->
+            FlowRow(horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+                Regex("\\S+").findAll(paragraph).forEach { match ->
+                    val displayed = match.value
+                    val lookup = displayed.trim { !it.isLetterOrDigit() && it != '’' && it != '\'' }
+                    Text(
+                        text = displayed,
+                        style = MaterialTheme.typography.bodyLarge,
+                        color = MaterialTheme.colorScheme.onSurface,
+                        modifier = Modifier
+                            .semantics {
+                                contentDescription = lookup
+                                role = Role.Button
+                            }
+                            .clickable(enabled = lookup.isNotBlank()) { onTermSelected(lookup) },
+                    )
+                }
+            }
         }
     }
 }

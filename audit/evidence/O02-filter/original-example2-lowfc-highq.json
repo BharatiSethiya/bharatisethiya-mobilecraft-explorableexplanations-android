@@ -1,0 +1,20 @@
+{
+  "target": {
+    "x": 628.888916015625,
+    "y": 939.6458129882812,
+    "bounds": [
+      524.888916015625,
+      901.6458129882812,
+      256.8888854980469,
+      132.44444274902344
+    ],
+    "before": "\n\t\t\t\n\t\t\tdrag\n\t\t\t\n\t\t\t\tFc = 1.2 KHz\n\t\t\t\tQ = 3.5\n\t\t\t\n\t\t\tUnstable\n\t\t",
+    "html": "<div class=\"filterFreqPlot\" style=\"position:absolute; top:0px; left:274px;\">\n\t\t\t<canvas class=\"v_freqPlot a_kf2\" width=\"256\" height=\"128\"></canvas>\n\t\t\t<div class=\"c_filterKnob a_kf2\" style=\"position: absolute; left: 0px; top: 0px;\"><div style=\"position: absolute; display: block; border-left: 1px dotted rgb(0, 0, 255); pointer-events: none; width: 1px; height: 128px; left: 104px;\"></div><img src=\"Media/FilterParamsKnob.png\" width=\"36\" height=\"36\" style=\"position: absolute; display: none; pointer-"
+  },
+  "after": {
+    "after": "\n\t\t\t\n\t\t\tdrag\n\t\t\t\n\t\t\t\tFc = 119 Hz\n\t\t\t\tQ = 10\n\t\t\t\n\t\t\tUnstable\n\t\t",
+    "html": "<div class=\"filterFreqPlot\" style=\"position:absolute; top:0px; left:274px;\">\n\t\t\t<canvas class=\"v_freqPlot a_kf2\" width=\"256\" height=\"128\"></canvas>\n\t\t\t<div class=\"c_filterKnob a_kf2\" style=\"position: absolute; left: 0px; top: 0px;\"><div style=\"position: absolute; display: block; border-left: 1px dotted rgb(0, 0, 255); pointer-events: none; width: 1px; height: 128px; left: 24px;\"></div><img src=\"Media/FilterParamsKnob.png\" width=\"36\" height=\"36\" style=\"position: absolute; display: block; pointer-",
+    "park": "Proposition 21: Vehicle License Fee for State Parks\nThe way it is now:\n\nCalifornia has 278 state parks, including state beaches and historic parks. The current $400 million budget is insufficient to maintain these parks, and 150 parks will be shut down at least part-time. Most parks charge $12 per vehicle for admission.\n\nWhat Prop 21 would do:\n\nProposes to charge car owners an extra $18 on their annual registration bill, to go into the state park fund. Cars that pay the charge would have free park admission.\n\nAnalysis:\n\nSuppose that an extra $18 was charged to 100% of vehicle registrations. Park admission would be free for those who paid the charge.\n\nThis would collect an extra $437 million ($504 million from the tax, minus $67 million lost revenue from admission) for a total state park budget of $837 million. This is sufficient to maintain the parks in their current state, plus fund a program to bring safety and cleanliness up to acceptable standards over the next 7 years.\n\nPark attendance would rise by 34%, to 100 million visits each year.",
+    "filter": "Below is a simplified digital adaptation of the analog state variable filter.\n\nThis topology is particularly useful for embedded audio processing, because Fc (cutoff frequency) and Q (resonance) are controlled by independent coefficients, kf and kq. (With most filters, the coefficients are functions of both parameters, which precludes pre-calculated lookup tables.)\n\nThe coefficients and transfer function are:\n\nSome example frequency responses:\n\nFc = 2 KHz\nQ = 0.8\nFc = 119 Hz\nQ = 10"
+  }
+}

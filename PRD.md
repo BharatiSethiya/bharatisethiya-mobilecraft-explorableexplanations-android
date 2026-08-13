@@ -54,7 +54,7 @@ The app presents a single long-form argument about active reading, split into an
   - Attendance displayed in millions with percent change from baseline and verb rise or fall.
   - Breakdown sentence in plain language: whether extra money is collected or lost, how much comes from tax versus admission, total budget, and a scenario sentence: not enough to maintain parks and some parks would be shut down part-time, or sufficient to maintain but not restore, or sufficient to restore over a stated number of years, or sufficient with a stated surplus per year.
   - Park attendance sentence stating rise or fall by percent to total visits.
-* States: baseline charge zero and admission twelve for everyone yields current budget and current visits; moving charge to maximum raises budget and typically lowers attendance; making admission free raises attendance; switching Vehicles to Taxpayers changes tax base and visible tax collected.
+* States: Initial state matches the original website: annual charge $18, 100% compliance, Vehicles basis, free admission, and admission limited to those who paid. Setting annual charge to $0 and admission to $12 for everyone yields the current-budget/current-visits reference state (budget $400M, visits 75M). From the website initial state, adjusting charge, compliance, admission, basis, and eligibility instantly updates outcomes; moving charge to maximum raises budget and typically lowers attendance; switching Vehicles to Taxpayers changes tax base (28M vs 13.6M) and visible tax collected; setting admission to free generally raises attendance from the $12 reference.
 
 ### 6.3 Filter
 

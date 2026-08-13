@@ -1,0 +1,20 @@
+{
+  "target": {
+    "x": 508.46181869506836,
+    "y": 967.9653120040894,
+    "bounds": [
+      490.4444580078125,
+      959.2986450195312,
+      36.03472137451172,
+      17.33333396911621
+    ],
+    "before": "100%",
+    "html": "<span class=\"a_percentCompliance c_adjustableNumber bounds_0_100_5\" style=\"pointer-events: auto;\"><span class=\"tangleDynamicValue\">100</span>%</span>"
+  },
+  "after": {
+    "after": "0%",
+    "html": "<span class=\"a_percentCompliance c_adjustableNumber bounds_0_100_5 \" style=\"pointer-events: auto;\"><span class=\"tangleDynamicValue\">0</span>%</span>",
+    "park": "Proposition 21: Vehicle License Fee for State Parks\nThe way it is now:\n\nCalifornia has 278 state parks, including state beaches and historic parks. The current $400 million budget is insufficient to maintain these parks, and 150 parks will be shut down at least part-time. Most parks charge $12 per vehicle for admission.\n\nWhat Prop 21 would do:\n\nProposes to charge car owners an extra $18 on their annual registration bill, to go into the state park fund. Cars that pay the charge would have free park admission.\n\nAnalysis:\n\nSuppose that an extra $18 was charged to 0% of vehicle registrations. Park admission would be free for those who paid the charge.\n\nThis would lose $67 million ($0 million from the tax, minus $67 million lost revenue from admission) for a total state park budget of $333 million. This is not sufficient to maintain the parks, and 200 parks would be shut down at least part-time.\n\nPark attendance would rise by 34%, to 100 million visits each year.",
+    "filter": "Below is a simplified digital adaptation of the analog state variable filter.\n\nThis topology is particularly useful for embedded audio processing, because Fc (cutoff frequency) and Q (resonance) are controlled by independent coefficients, kf and kq. (With most filters, the coefficients are functions of both parameters, which precludes pre-calculated lookup tables.)\n\nThe coefficients and transfer function are:\n\nSome example frequency responses:\n\nFc = 2 KHz\nQ = 0.8\nFc = 1.2 KHz\nQ = 3.5"
+  }
+}

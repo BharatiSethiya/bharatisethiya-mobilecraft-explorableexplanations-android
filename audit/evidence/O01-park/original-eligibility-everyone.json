@@ -1,0 +1,20 @@
+{
+  "target": {
+    "x": 417.8020782470703,
+    "y": 967.5624799728394,
+    "bounds": [
+      330.09027099609375,
+      958.8958129882812,
+      175.42361450195312,
+      17.33333396911621
+    ],
+    "before": "everyonethose who paid the charge",
+    "html": "<span class=\"a_newAdmissionAppliesToEveryone c_toggle v_ifElse\"><span style=\"display: none;\">everyone</span><span style=\"display: inline;\">those who paid the charge</span></span>"
+  },
+  "after": {
+    "after": "everyonethose who paid the charge",
+    "html": "<span class=\"a_newAdmissionAppliesToEveryone c_toggle v_ifElse\"><span style=\"display: inline;\">everyone</span><span style=\"display: none;\">those who paid the charge</span></span>",
+    "park": "Proposition 21: Vehicle License Fee for State Parks\nThe way it is now:\n\nCalifornia has 278 state parks, including state beaches and historic parks. The current $400 million budget is insufficient to maintain these parks, and 150 parks will be shut down at least part-time. Most parks charge $12 per vehicle for admission.\n\nWhat Prop 21 would do:\n\nProposes to charge car owners an extra $18 on their annual registration bill, to go into the state park fund. Cars that pay the charge would have free park admission.\n\nAnalysis:\n\nSuppose that an extra $18 was charged to 100% of vehicle registrations. Park admission would be free for everyone.\n\nThis would collect an extra $414 million ($504 million from the tax, minus $90 million lost revenue from admission) for a total state park budget of $814 million. This is sufficient to maintain the parks in their current state, plus fund a program to bring safety and cleanliness up to acceptable standards over the next 8 years.\n\nPark attendance would rise by 39%, to 104 million visits each year.",
+    "filter": "Below is a simplified digital adaptation of the analog state variable filter.\n\nThis topology is particularly useful for embedded audio processing, because Fc (cutoff frequency) and Q (resonance) are controlled by independent coefficients, kf and kq. (With most filters, the coefficients are functions of both parameters, which precludes pre-calculated lookup tables.)\n\nThe coefficients and transfer function are:\n\nSome example frequency responses:\n\nFc = 2 KHz\nQ = 0.8\nFc = 1.2 KHz\nQ = 3.5"
+  }
+}

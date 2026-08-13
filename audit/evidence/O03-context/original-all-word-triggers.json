@@ -1,0 +1,860 @@
+{
+  "count": 122,
+  "passed": 11,
+  "results": [
+    {
+      "index": 0,
+      "text": "Renewable",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 1,
+      "text": "Energy",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 2,
+      "text": "in",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 3,
+      "text": "California",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 4,
+      "text": "California",
+      "opened": "million ",
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 5,
+      "text": "leads",
+      "opened": "kilowatt-hours ",
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 6,
+      "text": "the",
+      "opened": "to ",
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 7,
+      "text": "nation",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 8,
+      "text": "in",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 9,
+      "text": "installed",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 10,
+      "text": "wind",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 11,
+      "text": "generation",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 12,
+      "text": "capacity.",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 13,
+      "text": "Over",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 14,
+      "text": "a",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 15,
+      "text": "third",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 16,
+      "text": "of",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 17,
+      "text": "the",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 18,
+      "text": "wind",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 19,
+      "text": "power",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 20,
+      "text": "in",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 21,
+      "text": "the",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 22,
+      "text": "United",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 23,
+      "text": "States",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 24,
+      "text": "is",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 25,
+      "text": "generated",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 26,
+      "text": "in",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 27,
+      "text": "California.",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 28,
+      "text": "In",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 29,
+      "text": "2004,",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 30,
+      "text": "wind",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 31,
+      "text": "energy",
+      "opened": "wind ",
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 32,
+      "text": "in",
+      "opened": "turbines ",
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 33,
+      "text": "California",
+      "opened": "of ",
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 34,
+      "text": "produced",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 35,
+      "text": "4,258",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 36,
+      "text": "million",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 37,
+      "text": "kilowatt-hours",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 38,
+      "text": "of",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 39,
+      "text": "electricity,",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 40,
+      "text": "about",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 41,
+      "text": "1.5",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 42,
+      "text": "percent",
+      "opened": "Francisco ",
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 43,
+      "text": "of",
+      "opened": "portion ",
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 44,
+      "text": "the",
+      "opened": "portion ",
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 45,
+      "text": "state's",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 46,
+      "text": "total",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 47,
+      "text": "electricity.",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 48,
+      "text": "That's",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 49,
+      "text": "more",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 50,
+      "text": "than",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 51,
+      "text": "enough",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 52,
+      "text": "to",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 53,
+      "text": "light",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 54,
+      "text": "a",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 55,
+      "text": "city",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 56,
+      "text": "the",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 57,
+      "text": "size",
+      "opened": "Angeles ",
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 58,
+      "text": "of",
+      "opened": "Angeles ",
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 59,
+      "text": "San",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 60,
+      "text": "Francisco.",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 61,
+      "text": "More",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 62,
+      "text": "than",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 63,
+      "text": "13,000",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 64,
+      "text": "of",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 65,
+      "text": "California's",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 66,
+      "text": "wind",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 67,
+      "text": "turbines,",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 68,
+      "text": "or",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 69,
+      "text": "95",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 70,
+      "text": "percent",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 71,
+      "text": "of",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 72,
+      "text": "all",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 73,
+      "text": "of",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 74,
+      "text": "California's",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 75,
+      "text": "wind",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 76,
+      "text": "generating",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 77,
+      "text": "capacity",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 78,
+      "text": "and",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 79,
+      "text": "output,",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 80,
+      "text": "are",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 81,
+      "text": "located",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 82,
+      "text": "in",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 83,
+      "text": "three",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 84,
+      "text": "primary",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 85,
+      "text": "regions:",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 86,
+      "text": "Altamont",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 87,
+      "text": "Pass",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 88,
+      "text": "(east",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 89,
+      "text": "of",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 90,
+      "text": "San",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 91,
+      "text": "Francisco",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 92,
+      "text": "-",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 93,
+      "text": "a",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 94,
+      "text": "portion",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 95,
+      "text": "of",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 96,
+      "text": "which",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 97,
+      "text": "is",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 98,
+      "text": "shown",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 99,
+      "text": "on",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 100,
+      "text": "the",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 101,
+      "text": "right",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 102,
+      "text": "in",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 103,
+      "text": "this",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 104,
+      "text": "photo",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 105,
+      "text": "from",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 106,
+      "text": "NREL),",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 107,
+      "text": "Tehachapi",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 108,
+      "text": "(south",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 109,
+      "text": "east",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 110,
+      "text": "of",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 111,
+      "text": "Bakersfield)",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 112,
+      "text": "and",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 113,
+      "text": "San",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 114,
+      "text": "Gorgonio",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 115,
+      "text": "(near",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 116,
+      "text": "Palm",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 117,
+      "text": "Springs,",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 118,
+      "text": "east",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 119,
+      "text": "of",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 120,
+      "text": "Los",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    },
+    {
+      "index": 121,
+      "text": "Angeles).",
+      "opened": null,
+      "matched": false,
+      "closed": true
+    }
+  ]
+}

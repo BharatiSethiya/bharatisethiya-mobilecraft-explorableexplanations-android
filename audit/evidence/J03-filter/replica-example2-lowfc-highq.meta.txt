@@ -1,0 +1,27 @@
+captured_utc=2026-08-13T16:17:02Z
+adb_serial=3A060DLJG001CE
+expected_package=com.bharatisethiya.explorableexplanations
+hierarchy_owner=com.bharatisethiya.explorableexplanations
+  mCurrentFocus=Window{ca538eb u0 com.bharatisethiya.explorableexplanations/com.bharatisethiya.explorableexplanations.MainActivity}
+  mFocusedApp=ActivityRecord{221148671 u0 com.bharatisethiya.explorableexplanations/.MainActivity t1590}
+    versionCode=1 minSdk=23 targetSdk=35
+    versionName=1.0.0
+Physical size: 1008x2244
+Physical density: 360
+font_scale=1.0
+display_density_forced=unset
+locale=en-US
+timezone=America/Toronto
+rotation=0
+orientation=port
+night_mode=2
+navigation_mode=2
+default_input_method=com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME
+keyboard_visible=false
+window_animation_scale=1.0
+transition_animation_scale=1.0
+animator_duration_scale=1.0
+enabled_accessibility_services=null
+touch_exploration_enabled=0
+model=Pixel 8 Pro
+sdk=36

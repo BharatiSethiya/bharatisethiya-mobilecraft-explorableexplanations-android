@@ -1,0 +1,61 @@
+ACCESSIBILITY MANAGER (dumpsys accessibility)
+
+currentUserId=0
+hasMagnificationConnection=true
+Magnifier on display#0
+    MagnificationConfig[mode: 1, activated: false, scale: 1.0, centerX: 504.0, centerY: 1095.0] 
+    Magnification region=SkRegion((0,0,1008,2190))
+    IdOfLastServiceToMagnify=-1
+    SupportWindowMagnification=true
+    WindowMagnificationConnectionState=CONNECTED
+User state[
+     attributes:{id=0, touchExplorationEnabled=true, serviceHandlesDoubleTap=true, requestMultiFingerGestures=true, requestTwoFingerPassthrough=true, sendMotionEventsEnabledfalse, displayMagnificationEnabled=false, autoclickEnabled=false, nonInteractiveUiTimeout=0, interactiveUiTimeout=10000, installedServiceCount=5, magnificationModes={0=1}, magnificationCapabilities=3, audioDescriptionByDefaultEnabled=false, magnificationCursorFollowingMode=0, magnificationFollowTypingEnabled=true, magnificationFollowKeyboardEnabled=false, alwaysOnMagnificationEnabled=true}
+     button mode: 1
+     shortcut key:{}
+     button:{}
+     button target:{null}
+     gesture:{}
+     qs shortcut targets:{}
+     a11y tiles in QS panel:{ComponentInfo{com.android.server.accessibility/FontSizeTile}}
+     top row key:{}
+     quick access dialog:{}
+     keyboard shortcuts targets:{}
+     Bound services:{Service[label=TalkBack, feedbackType[FEEDBACK_SPOKEN, FEEDBACK_HAPTIC, FEEDBACK_AUDIBLE], capabilities=251, eventTypes=TYPES_ALL_MASK, notificationTimeout=0, requestA11yBtn=false]}
+     Enabled services:{{com.google.android.marvin.talkback/com.google.android.marvin.talkback.TalkBackService}}
+     Binding services:{}
+     Crashed services:{}
+     Client list info:{
+          Client list callbacks: 28
+          Client list killed: false
+          Client list broadcasts count: -1
+          Registered clients:{
+[com.google.android.googlequicksearchbox][com.google.android.marvin.talkback][com.google.android.inputmethod.latin][com.facebook.orca][com.instagram.android][com.facebook.katana][com.google.android.apps.maps][com.google.android.youtube][com.android.chrome][com.google.android.as][com.google.android.apps.nexuslauncher][com.instagram.lite][com.facebook.workchat][com.bharatisethiya.explorableexplanations][com.facebook.lite][com.google.android.apps.photos][com.google.android.apps.wellbeing][com.google.android.contacts][com.microsoft.office.outlook][com.instagram.barcelona][com.google.android.inputmethod.latin][com.google.android.calendar][com.google.android.apps.weather][com.google.android.as][com.google.android.apps.messaging][com.google.android.contacts][com.flux][com.patternsketch]}]
+Global Info [ Top focused display Id = 0
+     Active Window Id = 2053
+     Top Focused Window Id = 2053
+     Accessibility Focused Window Id = 2053 ]
+
+Display[0] : 
+A11yWindow[AccessibilityWindowInfo[title=null, displayId=0, id=2031, taskId=-1, type=TYPE_SYSTEM, layer=1, region=SkRegion((0,0,1008,113)), bounds=Rect(0, 0 - 1008, 113), focused=false, active=false, pictureInPicture=false, transitionTime=15184374, hasParent=false, isAnchored=false, hasChildren=false]]
+WindowInfo[WindowInfo[title=null, displayId=0, taskId=-1, type=2000, layer=0, token=android.os.BinderProxy@a1733be, region=SkRegion((0,0,1008,113)), bounds=Rect(0, 0 - 1008, 113), parent=null, focused=false, children=null, accessibility anchor=9223372034707292159, pictureInPicture=false, watchOutsideTouch=false, mTransformMatrix=Matrix{[1.0, 0.0, -0.0][0.0, 1.0, -0.0][0.0, 0.0, 1.0]}, mMagnificationSpec=<scale:1.0,offsetX:0.0,offsetY:0.0>, locales=[en_US]]]
+,
+A11yWindow[AccessibilityWindowInfo[title=Explorable Explanations, displayId=0, id=2053, taskId=1606, type=TYPE_APPLICATION, layer=0, region=SkRegion((0,0,1008,2244)), bounds=Rect(0, 0 - 1008, 2244), focused=true, active=true, pictureInPicture=false, transitionTime=15184374, hasParent=false, isAnchored=false, hasChildren=false]]
+WindowInfo[WindowInfo[title=Explorable Explanations, displayId=0, taskId=1606, type=1, layer=1, token=android.os.BinderProxy@e4b489, region=SkRegion((0,0,1008,2244)), bounds=Rect(0, 0 - 1008, 2244), parent=null, focused=true, children=null, accessibility anchor=9223372034707292159, pictureInPicture=false, watchOutsideTouch=false, mTransformMatrix=Matrix{[1.0, 0.0, -0.0][0.0, 1.0, -0.0][0.0, 0.0, 1.0]}, mMagnificationSpec=<scale:1.0,offsetX:0.0,offsetY:0.0>, locales=[en_US]]]
+
+
+Window attributes:[{2029=AccessibilityWindowAttributes{mAccessibilityWindowTitle=nullmLocales=[en_US]}, 2030=AccessibilityWindowAttributes{mAccessibilityWindowTitle=nullmLocales=[en_US]}, 2031=AccessibilityWindowAttributes{mAccessibilityWindowTitle=nullmLocales=[en_US]}, 2032=AccessibilityWindowAttributes{mAccessibilityWindowTitle=Password keyboardmLocales=[en_US]}, 2034=AccessibilityWindowAttributes{mAccessibilityWindowTitle=Navigation barmLocales=[en_US]}, 2035=AccessibilityWindowAttributes{mAccessibilityWindowTitle=nullmLocales=[en_US]}, 2036=AccessibilityWindowAttributes{mAccessibilityWindowTitle=nullmLocales=[en_US]}, 2037=AccessibilityWindowAttributes{mAccessibilityWindowTitle=HomemLocales=[en_US]}, 2038=AccessibilityWindowAttributes{mAccessibilityWindowTitle=nullmLocales=[en_US]}, 2039=AccessibilityWindowAttributes{mAccessibilityWindowTitle=Navigation bar Edge PanelmLocales=[en_US]}, 2040=AccessibilityWindowAttributes{mAccessibilityWindowTitle=nullmLocales=[en_US]}, 2050=AccessibilityWindowAttributes{mAccessibilityWindowTitle=Chrome: Explorable ExplanationsmLocales=[en_US]}, 2053=AccessibilityWindowAttributes{mAccessibilityWindowTitle=Explorable ExplanationsmLocales=[en_US]}}]
+A11yInputFilter Info : 
+Enabled features of Display [0] = [MagnificationKeyHandler,KeyboardInterceptor,MotionEventInjector,MagnificationGesture,TouchExplorer]
+Global client list info:{
+    Client list callbacks: 9
+    Client list killed: false
+    Client list broadcasts count: -1
+    Registered clients:{
+[com.google.android.repairmode, com.android.localtransport, com.google.android.settings.future.biometrics.faceenroll, com.android.qns, com.android.location.fused, com.android.settings, com.android.inputdevices, com.google.android.iwlan, android, com.android.providers.settings, com.android.dynsystem, com.android.server.telecom, com.android.DeviceAsWebcam, com.google.SSRestartDetector, com.android.keychain, com.google.pixel.camera.services][com.android.pixeldisplayservice][com.google.android.documentsui][com.google.android.gsf, com.google.android.gms][com.google.android.GoogleCamera][com.google.android.permissioncontroller][com.android.systemui][com.google.android.settings.intelligence][com.android.inputdevices, com.android.settings, com.android.qns, com.android.location.fused, com.google.android.repairmode, com.android.DeviceAsWebcam, com.google.pixel.camera.services, com.android.localtransport, com.google.SSRestartDetector, com.google.android.iwlan, com.android.providers.settings, com.android.keychain, com.google.android.settings.future.biometrics.faceenroll, com.android.dynsystem, android, com.android.server.telecom]
+
+Proxy manager state:
+    Number of proxy connections: 0
+    Registered proxy connections:
+Accessibility Display Listener:
+    SystemUI uid: 10248
+    1 valid display: 0

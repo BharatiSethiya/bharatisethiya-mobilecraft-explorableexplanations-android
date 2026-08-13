@@ -1,6 +1,7 @@
 package com.bharatisethiya.explorableexplanations.ui.screens
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -18,6 +19,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.bharatisethiya.explorableexplanations.model.ChamberlinFilter
@@ -57,7 +59,7 @@ fun FilterScreen(innerPadding: PaddingValues) {
             )
         }
         item {
-            ExplanationCard("State-variable filter", "A simplified digital adaptation of the analog state-variable filter. Kf = 2*sin(pi*Fc/Fs), Kq = 1/Q. Topology: in -> (+) -> (kf) -> (+) -> . -> (kf) -> (+) -> [z^-1] -> out, with feedback.") {
+            ExplanationCard("State-variable filter", "A simplified digital adaptation of the analog state-variable filter at a 44.1 kHz sample rate. Kf = 2*sin(pi*Fc/Fs), Kq = 1/Q. Topology: in -> (+) -> (kf) -> (+) -> . -> (kf) -> (+) -> [z^-1] -> out, with feedback.") {
                 FilterTopology(kfLabel = "%.3f".format(result1.kf), kqLabel = "%.3f".format(result1.kq))
                 Text(
                     "H(z) = Kf²·z⁻¹ / (1 - (2-Kf·(Kf+Kq))·z⁻¹ + (1-Kf·Kq)·z⁻²)",
@@ -72,19 +74,13 @@ fun FilterScreen(innerPadding: PaddingValues) {
             ExplanationCard("Example 1 — Cutoff & Resonance", "First frequency response from original (Fc=2000, Q=0.8). Log-drag like original knob.") {
                 Text("${formatFreq(cutoff1)}, Q ${format(resonance1)}", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
                 Text("Fc: ${formatFreq(cutoff1)}", style = MaterialTheme.typography.headlineMedium)
-                Slider(
-                    value = log10(cutoff1.coerceAtLeast(20f)),
-                    onValueChange = { cutoff1 = 10f.pow(it) },
-                    valueRange = log10(20f)..log10(20000f),
-                    modifier = Modifier.semantics { contentDescription = "Fc1 ${cutoff1.toInt()} Hz" },
-                )
+                AccessibleFilterSlider("Example 1 cutoff", formatFreq(cutoff1)) {
+                    Slider(log10(cutoff1.coerceAtLeast(20f)), { cutoff1 = 10f.pow(it) }, valueRange = log10(20f)..log10(20000f))
+                }
                 Text("Q: ${format(resonance1)} (Kq=${format(result1.kq)})", style = MaterialTheme.typography.headlineMedium)
-                Slider(
-                    value = log10(resonance1.coerceAtLeast(0.01f)),
-                    onValueChange = { resonance1 = 10f.pow(it) },
-                    valueRange = log10(0.05f)..log10(10f),
-                    modifier = Modifier.semantics { contentDescription = "Q1 ${format(resonance1)}" },
-                )
+                AccessibleFilterSlider("Example 1 resonance", format(resonance1)) {
+                    Slider(log10(resonance1.coerceAtLeast(0.01f)), { resonance1 = 10f.pow(it) }, valueRange = log10(0.05f)..log10(10f))
+                }
 
                 val status = if (result1.stable) "Stable" else "Unstable"
                 Surface(
@@ -107,19 +103,13 @@ fun FilterScreen(innerPadding: PaddingValues) {
             ExplanationCard("Example 2 — Cutoff & Resonance", "Second frequency response from original (Fc=1200, Q=3.5). Original y is log Q base 24, x log frequency base 100.") {
                 Text("${formatFreq(cutoff2)}, Q ${format(resonance2)}", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
                 Text("Fc: ${formatFreq(cutoff2)}", style = MaterialTheme.typography.headlineMedium)
-                Slider(
-                    value = log10(cutoff2.coerceAtLeast(20f)),
-                    onValueChange = { cutoff2 = 10f.pow(it) },
-                    valueRange = log10(20f)..log10(20000f),
-                    modifier = Modifier.semantics { contentDescription = "Fc2 ${cutoff2.toInt()} Hz" },
-                )
+                AccessibleFilterSlider("Example 2 cutoff", formatFreq(cutoff2)) {
+                    Slider(log10(cutoff2.coerceAtLeast(20f)), { cutoff2 = 10f.pow(it) }, valueRange = log10(20f)..log10(20000f))
+                }
                 Text("Q: ${format(resonance2)} (Kq=${format(result2.kq)})", style = MaterialTheme.typography.headlineMedium)
-                Slider(
-                    value = log10(resonance2.coerceAtLeast(0.01f)),
-                    onValueChange = { resonance2 = 10f.pow(it) },
-                    valueRange = log10(0.05f)..log10(10f),
-                    modifier = Modifier.semantics { contentDescription = "Q2 ${format(resonance2)}" },
-                )
+                AccessibleFilterSlider("Example 2 resonance", format(resonance2)) {
+                    Slider(log10(resonance2.coerceAtLeast(0.01f)), { resonance2 = 10f.pow(it) }, valueRange = log10(0.05f)..log10(10f))
+                }
 
                 val status = if (result2.stable) "Stable" else "Unstable"
                 Surface(
@@ -132,6 +122,8 @@ fun FilterScreen(innerPadding: PaddingValues) {
                 FrequencyResponsePlot(result2.frequencyResponse, result2.stable)
                 MetricRow("Kf" to format(result2.kf), "Kq" to format(result2.kq), "b₀" to format(result2.b0))
                 MetricRow("a₁" to format(result2.a1), "a₂" to format(result2.a2))
+                Text("Pole 1: (${format(result2.pole1.first)}, ${format(result2.pole1.second)}i) ${poleLocation(result2.pole1)}")
+                Text("Pole 2: (${format(result2.pole2.first)}, ${format(result2.pole2.second)}i) ${poleLocation(result2.pole2)}")
             }
         }
 
@@ -203,6 +195,17 @@ fun FilterScreen(innerPadding: PaddingValues) {
 }
 
 private fun format(value: Float): String = String.format(Locale.US, "%.3f", value)
+
+private fun poleLocation(pole: Pair<Float, Float>): String =
+    if (pole.first * pole.first + pole.second * pole.second < 1f) "inside" else "outside"
+
+@Composable
+private fun AccessibleFilterSlider(label: String, value: String, content: @Composable () -> Unit) {
+    Box(Modifier.semantics(mergeDescendants = true) {
+        contentDescription = label
+        stateDescription = value
+    }) { content() }
+}
 
 private fun formatFreq(freq: Float): String {
     return if (freq < 100f) String.format(Locale.US, "%.1f Hz", freq)

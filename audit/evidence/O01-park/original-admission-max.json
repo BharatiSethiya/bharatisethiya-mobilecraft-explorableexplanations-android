@@ -1,0 +1,20 @@
+{
+  "target": {
+    "x": 289.59027099609375,
+    "y": 967.5624799728394,
+    "bounds": [
+      276.21527099609375,
+      958.8958129882812,
+      26.75,
+      17.33333396911621
+    ],
+    "before": "free",
+    "html": "<span class=\"a_newAdmission format_free c_adjustableNumber bounds_0_25\" style=\"pointer-events: auto;\"><span class=\"tangleDynamicValue\">free</span></span>"
+  },
+  "after": {
+    "after": "$25",
+    "html": "<span class=\"a_newAdmission format_free c_adjustableNumber bounds_0_25 \" style=\"pointer-events: auto;\"><span class=\"tangleDynamicValue\">$25</span></span>",
+    "park": "Proposition 21: Vehicle License Fee for State Parks\nThe way it is now:\n\nCalifornia has 278 state parks, including state beaches and historic parks. The current $400 million budget is insufficient to maintain these parks, and 150 parks will be shut down at least part-time. Most parks charge $12 per vehicle for admission.\n\nWhat Prop 21 would do:\n\nProposes to charge car owners an extra $18 on their annual registration bill, to go into the state park fund. Cars that pay the charge would have free park admission.\n\nAnalysis:\n\nSuppose that an extra $18 was charged to 100% of vehicle registrations. Park admission would be $25 for those who paid the charge.\n\nThis would collect an extra $522 million ($504 million from the tax, plus $18 million additional revenue from admission) for a total state park budget of $922 million. This is sufficient to maintain the parks in their current state, plus fund a program to bring safety and cleanliness up to acceptable standards over the next 4 years.\n\nPark attendance would fall by 36%, to 48 million visits each year.",
+    "filter": "Below is a simplified digital adaptation of the analog state variable filter.\n\nThis topology is particularly useful for embedded audio processing, because Fc (cutoff frequency) and Q (resonance) are controlled by independent coefficients, kf and kq. (With most filters, the coefficients are functions of both parameters, which precludes pre-calculated lookup tables.)\n\nThe coefficients and transfer function are:\n\nSome example frequency responses:\n\nFc = 2 KHz\nQ = 0.8\nFc = 1.2 KHz\nQ = 3.5"
+  }
+}

@@ -1,16 +1,17 @@
 package com.bharatisethiya.explorableexplanations.model
 
 import org.junit.Assert.assertEquals
-import org.junit.Assert.assertTrue
 import org.junit.Test
 
 class ParkScenarioCalculatorTest {
     @Test
-    fun originalDefaultsProduceFundedScenario() {
+    fun defaultsMatchOriginalWebsiteState() {
         val result = ParkScenarioCalculator.calculate(ParkInputs())
-        assertTrue(result.budgetMillions > 750f)
-        assertTrue(result.visitsMillions > 75f)
-        assertTrue(result.summary.contains("restoration"))
+        val explicitOriginal = ParkScenarioCalculator.calculate(
+            ParkInputs(tax = 18f, admission = 0f, admissionForEveryone = false),
+        )
+        assertEquals(explicitOriginal.budgetMillions, result.budgetMillions, 0.1f)
+        assertEquals(explicitOriginal.visitsMillions, result.visitsMillions, 0.1f)
     }
 
     @Test

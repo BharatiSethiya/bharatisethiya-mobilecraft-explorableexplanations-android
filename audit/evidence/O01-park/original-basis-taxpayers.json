@@ -1,0 +1,20 @@
+{
+  "target": {
+    "x": 614.8576507568359,
+    "y": 967.9653120040894,
+    "bounds": [
+      547.0069580078125,
+      959.2986450195312,
+      135.70138549804688,
+      17.33333396911621
+    ],
+    "before": "vehicle registrationsCalifornia taxpayers",
+    "html": "<span class=\"a_isTaxPerVehicle c_toggle v_ifElse\"><span style=\"display: inline;\">vehicle registrations</span><span style=\"display: none;\">California taxpayers</span></span>"
+  },
+  "after": {
+    "after": "vehicle registrationsCalifornia taxpayers",
+    "html": "<span class=\"a_isTaxPerVehicle c_toggle v_ifElse\"><span style=\"display: none;\">vehicle registrations</span><span style=\"display: inline;\">California taxpayers</span></span>",
+    "park": "Proposition 21: Vehicle License Fee for State Parks\nThe way it is now:\n\nCalifornia has 278 state parks, including state beaches and historic parks. The current $400 million budget is insufficient to maintain these parks, and 150 parks will be shut down at least part-time. Most parks charge $12 per vehicle for admission.\n\nWhat Prop 21 would do:\n\nProposes to charge car owners an extra $18 on their annual registration bill, to go into the state park fund. Cars that pay the charge would have free park admission.\n\nAnalysis:\n\nSuppose that an extra $18 was charged to 100% of California taxpayers. Park admission would be free for those who paid the charge.\n\nThis would collect an extra $174 million ($246 million from the tax, minus $72 million lost revenue from admission) for a total state park budget of $574 million. This is not sufficient to maintain the parks, and 19 parks would be shut down at least part-time.\n\nPark attendance would rise by 35%, to 101 million visits each year.",
+    "filter": "Below is a simplified digital adaptation of the analog state variable filter.\n\nThis topology is particularly useful for embedded audio processing, because Fc (cutoff frequency) and Q (resonance) are controlled by independent coefficients, kf and kq. (With most filters, the coefficients are functions of both parameters, which precludes pre-calculated lookup tables.)\n\nThe coefficients and transfer function are:\n\nSome example frequency responses:\n\nFc = 2 KHz\nQ = 0.8\nFc = 1.2 KHz\nQ = 3.5"
+  }
+}
